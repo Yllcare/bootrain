@@ -16,3 +16,5 @@ thrs=[np.where(slc[:,-1]>=4.5)]
 print('rows numbers with a value of 4.5 or higher in the last column:', thrs[0][0])
 #
 slc[0,]=1
+#
+np.savetxt('earthq_slced.csv', slc, delimiter=',')
